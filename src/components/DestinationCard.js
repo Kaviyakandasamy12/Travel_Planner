@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card, CardContent, CardMedia, Typography, Button } from '@mui/material';
+import { Card, CardContent, CardMedia, Typography, Button, Box } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const DestinationCard = ({ destination }) => {
   return (
@@ -18,9 +19,16 @@ const DestinationCard = ({ destination }) => {
         <Typography variant="body2" color="text.secondary">
           {destination.description}
         </Typography>
-        <Button variant="contained" color="primary" style={{ marginTop: '10px' }}>
-          Learn More
-        </Button>
+        <Box display="flex" justifyContent="center" marginTop="10px">
+          <Button 
+            variant="contained" 
+            color="primary"
+            component={Link} 
+            to={`/destination/${destination.id}`}
+          >
+            Visit
+          </Button>
+        </Box>
       </CardContent>
     </Card>
   );

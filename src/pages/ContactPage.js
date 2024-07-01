@@ -4,6 +4,7 @@ import { Container, Typography, TextField, Button } from '@mui/material';
 const ContactPage = () => {
   return (
     <Container>
+      <br/><br/>
       <Typography variant="h3" align="center" gutterBottom>
         Contact Us
       </Typography>

@@ -1,0 +1,45 @@
+/* AboutPage.css */
+
+.about-container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .about-header {
+    color: black;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .about-header h1 {
+    margin: 0;
+  }
+  
+  .about-content {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .about-section {
+    margin-bottom: 20px;
+  }
+  
+  .about-section h2 {
+    color: #2196F3;
+  }
+  
+  .about-section p {
+    line-height: 1.6;
+  }
+  
+  .about-footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
