@@ -1,6 +1,6 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
-import { Container, Typography, Card, CardContent, CardMedia, List, ListItem, ListItemText } from '@mui/material';
+import { useParams,useNavigate  } from 'react-router-dom';
+import { Container, Typography, Card, CardContent, CardMedia, List, ListItem, ListItemText,Button } from '@mui/material';
 
 const featuredDestinations = [
     {
@@ -345,10 +345,14 @@ const featuredDestinations = [
 const DestinationDetailPage = () => {
   const { id } = useParams();
   const destination = featuredDestinations.find(dest => dest.id === parseInt(id));
+  const navigate = useNavigate();
 
   if (!destination) {
     return <Typography variant="h6" align="center">Destination not found</Typography>;
   }
+  const handleNavigate = () => {
+    navigate('/travel-details');
+  };
 
   return (
     <Container>
@@ -404,6 +408,9 @@ const DestinationDetailPage = () => {
               </ListItem>
             ))}
           </List>
+          <Button variant="contained" color="primary" onClick={handleNavigate} style={{ marginTop: '20px' }}>
+            Plan Your Travel
+          </Button>
         </CardContent>
       </Card>
     </Container>

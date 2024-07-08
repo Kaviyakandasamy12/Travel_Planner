@@ -1,45 +1,74 @@
-/* AboutPage.css */
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+}
 
 .about-container {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .about-header {
-    color: black;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .about-header h1 {
-    margin: 0;
-  }
-  
-  .about-content {
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
-  }
-  
-  .about-section {
-    margin-bottom: 20px;
-  }
-  
-  .about-section h2 {
-    color: #2196F3;
-  }
-  
-  .about-section p {
-    line-height: 1.6;
-  }
-  
-  .about-footer {
-    background-color: #f1f1f1;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
-  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #333;
+}
+
+.about-header {
+  text-align: center;
+  padding: 20px;
+  /* background-color: #f5f5f5; */
+  border-bottom: 2px solid #ddd;
+}
+
+.about-header h1 {
+  margin: 0;
+  color: #007BFF; /* Primary blue color */
+}
+
+.about-header p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.about-content {
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #007BFF; /* Primary blue color */
+}
+
+.card p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.team-profiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.team-member {
+  text-align: center;
+  flex: 1 1 30%;
+}
+
+.team-member h3 {
+  margin: 10px 0;
+  color: #007BFF; /* Primary blue color */
+}
+
+.about-footer {
+  text-align: center;
+  padding: 20px;
+  /* background-color: #f5f5f5; */
+  border-top: 2px solid #ddd;
+}
